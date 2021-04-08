@@ -1,9 +1,9 @@
 pipeline {
 	environment {
-		registry = "avengers123/github-jenkins-docker"
+		registry =  "avengers123/github-jenkins-docker"
 		registryCredential = 'dockerhub'
 		dockerImage = ''
-		dockerRunCommand = 'docker run -d -p 8080:8080 -name myapp avengers123/github-jenkins-docker
+		dockerRunCommand = 'docker run -d -p 8080:8080 -name myapp avengers123/github-jenkins-docker'
 	}
 	agent any
 	stages {
